@@ -1,0 +1,6 @@
+{
+  "name": "ionic-seed",
+  "app_id": "",
+  "documentRoot": "www",
+  "gulpStartupTasks": ["watch"]
+}
