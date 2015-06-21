@@ -28,8 +28,7 @@ angular.module('starter', [
   })
 
   .config(function ($urlRouterProvider) {
-
-    // if none of the above states are matched, use this as the fallback
+    // if none of the states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/tab/dash');
 
   });
