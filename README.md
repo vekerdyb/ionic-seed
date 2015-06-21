@@ -1,5 +1,7 @@
 # ionic-seed
-A modularized angular ionic seed.
+A modularized angular ionic seed, using ES6.
+
+###Contributions welcome.
 
 ## Features:
 - modular angular structure
@@ -9,8 +11,6 @@ A modularized angular ionic seed.
 ## Todo:
 - testing
 - set up per file action in `gulp watch` http://stackoverflow.com/questions/22391527/gulps-gulp-watch-not-triggered-for-new-or-deleted-files
-
-Contributions welcome.
 
 ## Usage
 `gulp build` - build
