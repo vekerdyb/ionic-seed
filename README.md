@@ -12,6 +12,7 @@ A modularized angular ionic seed, using ES6.
 ## Todo:
 - e2e testing
 - set up per file action in `gulp watch` http://stackoverflow.com/questions/22391527/gulps-gulp-watch-not-triggered-for-new-or-deleted-files
+- add webpack
 
 ## Usage
 `bower install` - install bower dependencies
