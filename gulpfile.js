@@ -20,6 +20,8 @@ var paths = {
   scripts: ['src/**/*.js', '!src/**/*.spec.js', '!src/lib/**/*']
 };
 
+// Build
+
 gulp.task('default', ['build']);
 
 gulp.task('build', ['images', 'sass', 'lib', 'templates', 'scripts'])
@@ -77,6 +79,9 @@ gulp.task('scripts', function (done) {
     .on('end', done);
 });
 
+
+// Watch
+
 gulp.task('watch', function () {
   watch(paths.templates, function () {
     gulp.start('templates')
@@ -91,6 +96,25 @@ gulp.task('watch', function () {
     gulp.start('sass')
   });
 });
+
+
+// Unit tests
+
+var _ = require('lodash');
+var karma = require('karma').server;
+var karmaConf = require('./karma.conf.js');
+
+// Run test once and exit
+gulp.task('test', function (done) {
+  karma.start(_.assign({}, karmaConf, {singleRun: true}), done);
+});
+
+// Watch for file changes and re-run tests on each change
+gulp.task('tdd', function (done) {
+  karma.start(karmaConf, done);
+});
+
+// Ionic predefined
 
 gulp.task('install', ['git-check'], function () {
   return bower.commands.install()

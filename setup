@@ -1,0 +1,18 @@
+#!/bin/bash
+bower install
+npm install
+gulp build
+gulp test
+if [ $? != 0 ]; then
+    echo ""
+    echo ""
+    echo "Tests did not pass. Please check everything is in order."
+    echo ""
+    exit $?
+else
+    echo ""
+    echo ""
+    echo "Setup complete. Run 'ionic serve' to run the server."
+    echo ""
+    exit 0
+fi

@@ -4,6 +4,8 @@ bower_components
 
 www/
 
+coverage/
+
 .idea/
 
 .DS_Store
