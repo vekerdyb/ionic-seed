@@ -1,11 +1,14 @@
-node_modules
-
-bower_components
-
+# generated
+node_modules/
+bower_components/
+platforms/
+plugins/
+resources/
 www/
-
 coverage/
 
+# IDE
 .idea/
 
+# OS
 .DS_Store

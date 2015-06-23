@@ -9,6 +9,14 @@ A modularized ionic seed using ES6 with unit testing.
 
 ###Contributions are welcome.
 
+## Prerequisites
+Globally available:
+
+- `npm` (recommended to install via `nvm`)
+- `cordova`
+- `ionic`
+- `gulp`
+
 ## Usage
 Clone the repo.
 
@@ -30,6 +38,7 @@ First time setup:
 ```
 bower install
 npm install
+cordova plugin add com.ionic.keyboard # not 100% why this isn't installed properly otherwise
 gulp build
 gulp test
 ionic serve
