@@ -2,6 +2,7 @@
 bower install
 npm install
 gulp build
+cordova plugin add com.ionic.keyboard # not 100% why this isn't installed properly otherwise
 gulp test
 if [ $? != 0 ]; then
     echo ""

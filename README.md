@@ -38,7 +38,7 @@ First time setup:
 ```
 bower install
 npm install
-cordova plugin add com.ionic.keyboard # not 100% why this isn't installed properly otherwise
+cordova plugin add com.ionic.keyboard
 gulp build
 gulp test
 ionic serve
