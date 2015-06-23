@@ -63,4 +63,4 @@ ionic serve
 
 # Credits
 This project is a rewrite of the [ionic](http://ionicframework.com/) tabs starter app.  
-I learnt many of the cool things applied here from @easyCZ while working at @dangerfarms.
+I learnt most of the cool things used here from [@easyCZ](https://github.com/easyCZ) while working at [@dangerfarms](https://github.com/dangerfarms/).
