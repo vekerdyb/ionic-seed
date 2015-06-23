@@ -7,9 +7,15 @@ A modularized ionic seed using ES6 with unit testing.
 - separating source and `www` files (the entire www directory is built automatically)
 - unit test setup with karma
 
-###Contributions welcome.
+###Contributions are welcome.
 
 ## Usage
+Clone the repo.
+
+Set your git upstream to your own project. (`git remote set-url upstream [your own git]`)
+
+Use the commands below.
+
 `bower install` - install bower dependencies
 `npm install` - install dependencies
 `ionic serve` - start dev server
@@ -55,7 +61,7 @@ I learnt most of the cool things used here from [@easyCZ](https://github.com/eas
 See the [issues](https://github.com/vekerdyb/ionic-seed/issues/) for more, or add your own [request](https://github.com/vekerdyb/ionic-seed/issues/new).
 
 # Motivation
-While the [ionic framework](http://ionicframework.com/) is a _huge_ help when it comes to building mobile apps fast, the seed project was built a while ago, and does not follow best practices.
+While the [ionic framework](http://ionicframework.com/) is a _huge_ help when it comes to building mobile apps fast, but the seed project was developed a while ago, and does not follow best practices in all cases.
 
 ### Modular angular structure
 The original project groups modules by type (controllers, services, etc.), which is not the best architectural pattern to follow. This project shows an example of how to group your modules by functionality. Obviously modules could have submodules (e.g. the chats module could have a chat-detail submodule), but the current structure is enough to get the idea.
