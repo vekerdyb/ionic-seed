@@ -11,6 +11,7 @@ A modularized ionic seed using ES6 with unit testing.
 
 ## Todo:
 - controller unit test example
+- add linting
 - move `lib` to bower_components 
 - e2e testing
 - set up per file action in `gulp watch` http://stackoverflow.com/questions/22391527/gulps-gulp-watch-not-triggered-for-new-or-deleted-files
