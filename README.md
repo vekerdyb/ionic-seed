@@ -1,6 +1,12 @@
 # ionic-seed
 A modularized ionic seed using ES6 with unit testing.
 
+### Features:
+- modular angular structure
+- ES6 codebase with Babel transpilation
+- separating source and `www` files (the entire www directory is built automatically)
+- unit test setup with karma
+
 ###Contributions welcome.
 
 ## Usage
@@ -35,13 +41,7 @@ ionic serve
 This project is a rewrite of the [ionic](http://ionicframework.com/) tabs starter app.  
 I learnt most of the cool things used here from [@easyCZ](https://github.com/easyCZ) while working at [@dangerfarms](https://github.com/dangerfarms/).
 
-# Features:
-- modular angular structure
-- ES6 codebase with Babel transpilation
-- separating source and `www` files (the entire www directory is built automatically)
-- unit test setup with karma
-
-## Todo:
+# Todo:
 - controller unit test example
 - add linting
 - move `lib` to bower_components 
@@ -53,7 +53,7 @@ I learnt most of the cool things used here from [@easyCZ](https://github.com/eas
 - ...
 See the [issues](https://github.com/vekerdyb/ionic-seed/issues/) for more, or add your own request!
 
-## Motivation
+# Motivation
 While the [ionic framework](http://ionicframework.com/) is a _huge_ help when it comes to building mobile apps fast, the seed project was built a while ago, and does not follow best practices.
 
 ### Modular angular structure
