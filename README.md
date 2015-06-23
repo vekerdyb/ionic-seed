@@ -51,7 +51,8 @@ I learnt most of the cool things used here from [@easyCZ](https://github.com/eas
 - add gulp environment configuration (`gulp config --env xyz`)
 - add gulp security header configuration
 - ...
-See the [issues](https://github.com/vekerdyb/ionic-seed/issues/) for more, or add your own request!
+
+See the [issues](https://github.com/vekerdyb/ionic-seed/issues/) for more, or add your own [request](https://github.com/vekerdyb/ionic-seed/issues/new).
 
 # Motivation
 While the [ionic framework](http://ionicframework.com/) is a _huge_ help when it comes to building mobile apps fast, the seed project was built a while ago, and does not follow best practices.
