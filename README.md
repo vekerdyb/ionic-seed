@@ -16,17 +16,15 @@ Set your git upstream to your own project. (`git remote set-url upstream [your o
 
 Use the commands below.
 
-`bower install` - install bower dependencies
-`npm install` - install dependencies
-`ionic serve` - start dev server
-
-`gulp test` - run tests once
-`gulp tdd` - run tests continuously, watching for changes
-
-`gulp build` - build
-`gulp clean` - clean www/ dir
-`gulp rebuild` - clean + build
-`gulp watch` - watch files for changes
+- `bower install` - install bower dependencies
+- `npm install` - install dependencies
+- `ionic serve` - start dev server
+- `gulp test` - run tests once
+- `gulp tdd` - run tests continuously, watching for changes
+- `gulp build` - build
+- `gulp clean` - clean www/ dir
+- `gulp rebuild` - clean + build
+- `gulp watch` - watch files for changes
 
 First time setup:
 ```
