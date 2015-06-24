@@ -3,6 +3,12 @@ bower install
 npm install
 gulp build
 cordova plugin add com.ionic.keyboard # not 100% why this isn't installed properly otherwise
+
+# E2E
+node_modules/.bin/webdriver-manager update
+node_modules/.bin/webdriver-manager update --standalone
+
+# Run tests
 gulp test
 if [ $? != 0 ]; then
     echo ""

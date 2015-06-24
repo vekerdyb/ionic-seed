@@ -16,6 +16,7 @@ Globally available:
 - `cordova`
 - `ionic`
 - `gulp`
+- `ripple` (device emulator for e2e testing with cordova)
 
 ## Usage
 Clone the repo.
@@ -29,6 +30,8 @@ Use the commands below.
 - `ionic serve` - start dev server
 - `gulp test` - run tests once
 - `gulp tdd` - run tests continuously, watching for changes
+- `gulp e2e` - run end-to-end tests
+- `gulp e2e-cordova` - run end-to-end tests that require cordova plugins to be loaded
 - `gulp build` - build
 - `gulp clean` - clean www/ dir
 - `gulp rebuild` - clean + build

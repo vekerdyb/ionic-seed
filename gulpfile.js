@@ -17,7 +17,9 @@ var paths = {
   images: ['src/img/**/*'],
   lib: ['src/lib/**/*'],
   templates: ['src/**/*.html'],
-  scripts: ['src/**/*.js', '!src/**/*.spec.js', '!src/lib/**/*']
+  scripts: ['src/**/*.js', '!src/**/*.spec.js', '!src/lib/**/*'],
+  e2e:  ["./src/**/*.e2e.spec.js", "!./src/**/*.cordova.e2e.spec.js"],
+  e2eCordova:  ["./src/**/*.cordova.e2e.spec.js"]
 };
 
 // Build
@@ -134,4 +136,27 @@ gulp.task('git-check', function (done) {
     process.exit(1);
   }
   done();
+});
+
+// E2E tests
+
+var webdriver_standalone = require("gulp-protractor").webdriver_standalone;
+var protractor = require("gulp-protractor").protractor;
+
+gulp.task('webdriver-standalone', webdriver_standalone);
+
+gulp.task('e2e', function () {
+  gulp.src(paths.e2e)
+    .pipe(protractor({
+      configFile: "protractor/protractor.conf.js"
+    }))
+    .on('error', function(e) { throw e })
+});
+
+gulp.task('e2e-cordova', function () {
+  gulp.src(paths.e2eCordova)
+    .pipe(protractor({
+      configFile: "protractor/protractor-cordova.conf.js"
+    }))
+    .on('error', function(e) { throw e })
 });
