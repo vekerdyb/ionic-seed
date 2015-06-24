@@ -11,17 +11,33 @@ cp $(find . -name selenium-server-standalone*) protractor/selenium-server-standa
 cp $(find . -name chromedriver) protractor/chromedriver
 
 # Run tests
+echo "Running unit tests..."
 gulp test
+
+echo ""
+echo ""
 if [ $? != 0 ]; then
-    echo ""
-    echo ""
-    echo "Tests did not pass. Please check everything is in order."
-    echo ""
-    exit $?
+    echo "Unit tests did not pass. Please check everything is in order."
 else
-    echo ""
-    echo ""
-    echo "Setup complete. Run 'ionic serve' to run the server."
-    echo ""
-    exit 0
+    echo "Unit tests passed."
 fi
+echo ""
+
+echo "Running e2e tests..."
+gulp e2e
+
+if [ $? != 0 ]; then
+    echo "E2E Tests did not pass. Please check everything is in order."
+else
+    echo "E2E tests passed."
+fi
+
+echo "Running e2e-cordova tests..."
+gulp e2e-cordova
+if [ $? != 0 ]; then
+    echo "E2E Tests with cordova did not pass. Please check everything is in order."
+else
+    echo "E2E tests with cordova passed."
+fi
+
+echo "Run ionic-serve to start the server"

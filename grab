@@ -2,3 +2,4 @@ export PROJECT_NAME=ionic-seed
 git clone git@github.com:vekerdyb/$PROJECT_NAME.git
 cd $PROJECT_NAME
 ./setup
+echo "Inspect the results above, if all is fine, enter your new directory and run 'ionic serve' to start the server,"
