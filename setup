@@ -32,12 +32,12 @@ else
     echo "E2E tests passed."
 fi
 
-echo "Running e2e-cordova tests..."
-gulp e2e-cordova
-if [ $? != 0 ]; then
-    echo "E2E Tests with cordova did not pass. Please check everything is in order."
-else
-    echo "E2E tests with cordova passed."
-fi
+# echo "Running e2e-cordova tests..."
+# gulp e2e-cordova
+# if [ $? != 0 ]; then
+#     echo "E2E Tests with cordova did not pass. Please check everything is in order."
+# else
+#     echo "E2E tests with cordova passed."
+# fi
 
 echo "Run ionic-serve to start the server"
