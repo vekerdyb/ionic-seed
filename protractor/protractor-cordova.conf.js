@@ -14,8 +14,9 @@ exports.config = {
     defaultTimeoutInterval: 30000,
     isVerbose: true,
   },
-  seleniumServerJar: '../node_modules/webdriver-manager/selenium/selenium-server-standalone-2.46.0.jar',
-  chromeDriver: '../node_modules/webdriver-manager/selenium/chromedriver',
+
+  seleniumServerJar: 'selenium-server-standalone.jar',
+  chromeDriver: 'chromedriver',
 
   allScriptsTimeout: 20000,
   onPrepare: function(){

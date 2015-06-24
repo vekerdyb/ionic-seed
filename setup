@@ -7,6 +7,8 @@ cordova plugin add com.ionic.keyboard # not 100% why this isn't installed proper
 # E2E
 node_modules/.bin/webdriver-manager update
 node_modules/.bin/webdriver-manager update --standalone
+cp $(find . -name selenium-server-standalone*) protractor/selenium-server-standalone.jar
+cp $(find . -name chromedriver) protractor/chromedriver
 
 # Run tests
 gulp test
