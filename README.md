@@ -19,6 +19,9 @@ Globally available:
 - `ripple` (device emulator for e2e testing with cordova)
 
 ## Usage
+Run:
+`source < (curl -L https://raw.githubusercontent.com/vekerdyb/ionic-seed/master/grab)`
+
 Clone the repo.
 
 Set your git upstream to your own project. (`git remote set-url upstream [your own git]`)
