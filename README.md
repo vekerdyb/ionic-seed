@@ -20,7 +20,7 @@ Globally available:
 
 ## Usage
 Run:
-`source <(curl -L https://raw.githubusercontent.com/vekerdyb/ionic-seed/master/grab)`
+`bash <(curl -L https://raw.githubusercontent.com/vekerdyb/ionic-seed/master/grab)`
 
 Clone the repo.
 
