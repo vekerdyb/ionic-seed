@@ -23,21 +23,33 @@ else
 fi
 echo ""
 
-echo "Running e2e tests..."
-gulp e2e
 
-if [ $? != 0 ]; then
-    echo "E2E Tests did not pass. Please check everything is in order."
-else
-    echo "E2E tests passed."
-fi
 
-# echo "Running e2e-cordova tests..."
-# gulp e2e-cordova
-# if [ $? != 0 ]; then
-#     echo "E2E Tests with cordova did not pass. Please check everything is in order."
-# else
-#     echo "E2E tests with cordova passed."
-# fi
+echo "Setting up git hooks..."
+mkdir -p .git/hooks
+rm .git/hooks/*;
 
+echo '#!/bin/bash
+gulp test;' > .git/hooks/pre-commit;
+chmod +x .git/hooks/pre-commit;
+echo "done."
+
+#echo "Running e2e tests..."
+#gulp e2e
+#
+#if [ $? != 0 ]; then
+#    echo "E2E Tests did not pass. Please check everything is in order."
+#else
+#    echo "E2E tests passed."
+#fi
+
+#echo "Running e2e-cordova tests..."
+#gulp e2e-cordova
+#if [ $? != 0 ]; then
+#    echo "E2E Tests with cordova did not pass. Please check everything is in order."
+#else
+#    echo "E2E tests with cordova passed."
+#fi
+
+echo "Setup completed"
 echo "Run ionic-serve to start the server"
