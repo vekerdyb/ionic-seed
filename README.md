@@ -39,18 +39,9 @@ Use the commands below.
 - `gulp clean` - clean www/ dir
 - `gulp rebuild` - clean + build
 - `gulp watch` - watch files for changes
+- `gulp config --env [environment setup file]` - set config variables (via gulp-ng-constant)
 
 First time setup:
-```
-bower install
-npm install
-cordova plugin add com.ionic.keyboard
-gulp build
-gulp test
-ionic serve
-```
-
-or simply:
 ```
 ./setup
 ionic serve

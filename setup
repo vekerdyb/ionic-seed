@@ -2,6 +2,7 @@
 bower install
 npm install
 gulp build
+gulp config --env local
 cordova plugin add com.ionic.keyboard # not 100% why this isn't installed properly otherwise
 
 # E2E
@@ -22,7 +23,6 @@ else
     echo "Unit tests passed."
 fi
 echo ""
-
 
 
 echo "Setting up git hooks..."

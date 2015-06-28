@@ -13,9 +13,10 @@ var watch = require('gulp-watch');
 
 var paths = {
   destBase: 'www/',
+  sassWatch: ['src/**/*.scss'],
   sass: ['src/ionic.app.scss'],
   images: ['src/img/**/*'],
-  lib: ['src/lib/**/*'],
+  lib: ['src/lib/**/*', 'bower_components/**/*'],
   templates: ['src/**/*.html'],
   scripts: ['src/**/*.js', '!src/**/*.spec.js', '!src/lib/**/*'],
   e2e:  ["./src/**/*.e2e.spec.js", "!./src/**/*.cordova.e2e.spec.js"],
@@ -94,7 +95,7 @@ gulp.task('watch', function () {
   watch(paths.images, function () {
     gulp.start('images')
   });
-  watch(paths.sass, function () {
+  watch(paths.sassWatch, function () {
     gulp.start('sass')
   });
 });
@@ -159,4 +160,17 @@ gulp.task('e2e-cordova', function () {
       configFile: "protractor/protractor-cordova.conf.js"
     }))
     .on('error', function(e) { throw e })
+});
+
+
+// Environment setup
+var ngConstant = require('gulp-ng-constant'),
+  yargs = require('yargs');
+
+gulp.task('config', function () {
+  var args = yargs.argv;
+  gulp.src('env/' + args.env + '.json')
+    .pipe(ngConstant())
+    .pipe(rename('config.js'))
+    .pipe(gulp.dest('src'));
 });

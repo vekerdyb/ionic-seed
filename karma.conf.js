@@ -1,10 +1,10 @@
 module.exports = {
   browsers: ['PhantomJS'],
-  frameworks: ['jasmine'],
+  frameworks: ['jasmine', 'es6-shim'],
   files: [
     // Libs
     {pattern: 'bower_components/angular/angular.js', watch: false},
-    {pattern: 'bower_components/ionic/ionic.js', watch: false},
+    {pattern: 'bower_components/ionic/js/ionic.bundle.js', watch: false},
     {pattern: 'bower_components/angular-mocks/angular-mocks.js', watch: false},
 
     //{pattern: 'bower_components/**/*.js', watch: false},
